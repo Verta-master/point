@@ -59,7 +59,84 @@
 
 <a href="http://pointparts.lidstudio.ru/attachments/get/8/test.txt" class="more-info-product">Скачать карточку товара в формате PDF</a>
 
-а предыдущую ссылку перенести
+а предыдущую ссылку перенести в блок card-btns (ниже по этому блоку еще инфа):
 
 <a data-fancybox="" data-src="#delivery_product" data-animation-effect="zoom-in-out" href="javascript:;" class="call-ec-widget more-info-product">Рассчитать доставку</a>
 
+6) В табах поменять очередность (Характеристики первые)
+
+7) Поправить текст артикула:
+
+<div class="shop-item-artikul"><span>Артикул</span>281155</div>
+
+8) Изменить блок с ценой, кнопку "Купить вынести в след. блок:
+
+			<div class="price-tovar">
+                <div class="stoimist">Стоимостъ</div>
+                <p class="nds20">Включён НДС 20%</p>
+                <div class="js_shop_param_price shop_param_price shop-item-price">
+                  <div class="price">1150 <span class="rub">₽</span></div>
+                  <div class="price-old">1900 &#8381;</div>
+                </div>
+              </div>
+
+9) Добавить блок с кнопками:
+
+			<div class="card-btns">
+                <a data-fancybox="" data-src="#delivery_product" data-animation-effect="zoom-in-out" href="javascript:;" class="call-ec-widget btn more-info-product">Рассчитать доставку</a>
+                <div class="js_shop_one_click shop_one_click">
+                  <input data-fancybox data-src="#one_click_modal220" data-animation-effect="zoom-in-out" type="button" value="В корзину" action="one_click" class="btn btn__oneclick">
+                </div>
+                <div class="shop-compare">
+                  <form action="" method="POST" class="ajax">
+                    <input type="hidden" name="module" value="shop">
+                    <input type="hidden" name="action" value="compare_goods">
+                    <input type="hidden" name="id" value="42195">
+                    <input type="hidden" name="site_id" value="13">
+                    <input type="checkbox" name="add" value="1" id="id_add42195" class="js_shop_add_compare shop_compare_button">
+                    <label class="shop_add_compare add_compare" for="id_add42195">К сравнению</label>
+                  </form>
+                </div>
+                <a href="#" class="actions-buy">Купить в 1 клик</a>
+              </div>
+			  
+10) Блок files__download__buy удалить или скрыть
+
+11) В блоке .shop-text-cart для точек в таблице между спанами поставить тег <i></i> в каждой строчке:
+
+	<div class="shop-text-cart">
+       <p><span class="param-name">Бренд</span><i></i><span class="param-value"> Deestone</span></p>
+	   
+12) Добавить слайдер:
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<script>
+    var mySwiper = new Swiper ('.slider', {
+      navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
+    });
+  </script>
+  
+Разметка к нему:
+
+<p class="slider-title">Похожие товары</p>
+<div class="swiper-container slider">
+  <div class="swiper-wrapper">
+	<div class="swiper-slide">
+		карточка здесь
+	</div>
+	...
+  </div>
+  <div class="swiper-button-prev slider__prev"></div>
+  <div class="swiper-button-next slider__next"></div>
+</div>
