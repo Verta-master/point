@@ -1,0 +1,43 @@
+Стили в файле update.css
+
+1) В футере убрать из разметки 2 блока: 
+	<div class="footer-left-block">
+	<div class="footer-center-block">
+	
+2) Добавить иконку scale.svg
+
+3) Для карточки в каталоге добавить блоки с акциями после названия:
+
+<div class="shop-sale">
+	<div class="shop-label shop-label--violet">Скидка<br>300 р.</div>
+</div>
+<div class="shop-action">
+	<div class="shop-label shop-label--violet">Акция</div>
+	<div class="shop-label shop-label--green">Длительный срок службы</div>
+</div>
+
+4) Форму сравнения добавить внизу карточки каталога:
+
+		  <div class="shop-compare">
+            <form action="" method="POST" class="ajax">
+              <input type="hidden" name="module" value="shop">
+              <input type="hidden" name="action" value="compare_goods">
+              <input type="hidden" name="id" value="42195">
+              <input type="hidden" name="site_id" value="13">
+              <input type="checkbox" name="add" value="1" id="id_add42195" class="js_shop_add_compare shop_compare_button">
+              <label class="shop_add_compare add_compare" for="id_add42195"></label>
+            </form>
+          </div>
+
+5) Добавить блок с ценой:
+
+  <div class="shop-price">
+	<span class="shop-oldprice">6 700 р.</span>
+	<span class="shop-newprice">6 400 р.</span>
+  </div>
+  
+6) В карточку товара добавить в блок .big-images внизу кнопки:
+
+<a class="more-info-product">Инфрмация об оплате</a>
+<a class="more-info-product">Рассчитать доставку</a>
+<a class="more-info-product">Скачать файл о продукте (pdf)</a>

@@ -1,0 +1,65 @@
+1) В карточку <div class="js_shop_list shop_list"> добавить строку:
+
+<div class="sale">Акция</div>
+
+2) после картинки добавить строку:
+
+<p class="country"><b>Страна-производитель: </b>КНР</p>
+
+3) Блок сравнения <div class="shop-compare"> переести в новый блок actions с остальными линками (перед кнопкой "Подробнее"):
+
+
+		<div class="actions">
+			<a href="#" class="actions-buy">Купить в 1 клик</a>
+            <div class="shop-compare">
+              <form action="" method="POST" class="ajax">
+                <input type="hidden" name="module" value="shop">
+                <input type="hidden" name="action" value="compare_goods">
+                <input type="hidden" name="id" value="42195">
+                <input type="hidden" name="site_id" value="13">
+                <input type="checkbox" name="add" value="1" id="id_add42195" class="js_shop_add_compare shop_compare_button">
+                <label class="shop_add_compare add_compare" for="id_add42195">К сравнению</label>
+              </form>
+            </div>
+            <a href="#" class="actions-like">В избранное</a>
+            <div class="actions-presence">В наличии</div>
+		</div>
+
+4) В шапке внутрь блока .top-line-item-cart внести дополнительно:
+
+  <div class="header">
+		<div class="logo"><a href="http://pointparts.lidstudio.ru/" title=""><img src="img/images/logo.png" alt=""></a></div>
+		<div class="slogan"><p>Запчасти для погрузчиков<br>и строительной техники</p></div>
+    <div class="top_search">
+      <form action="http://pointparts.lidstudio.ru/search/" class="js_search_form search_form" method="get" id="search">
+      <div class="search-input">
+      <input type="hidden" name="module" value="search">
+      <input id="textbox" type="text" name="searchword" placeholder="введите текст" class="top-search-input">
+      <input type="submit" value="" class="top-search-btn">
+      </div>
+      </form>
+    </div>
+    <div class="cart_block top-line-item-cart">
+      <a href="#" class="header__link header__link--compare" title="Сравнение"><span class="header__number">0</span></a>
+      <a href="#" class="header__link header__link--like header__link--number" title="Избранное"><span class="header__number ">1</span></a>
+      <span id="show_cart" class="js_show_cart">
+        <a href="http://pointparts.lidstudio.ru/shop/cart/?308549" class="top-line-item-cart-link"><span>9400</span>&nbsp;&#8381;</a>
+      </span>
+    </div>
+    <div class="header-top-map"><p>Адрес компании</p><a href="http://pointparts.lidstudio.ru/kontakty/" class="zakaz">Показать на карте</a></div>
+    <div class="header-top-email"><a href="mailto:msk@point-parts.ru">msk@point-parts.ru</a><a href="http://pointparts.lidstudio.ru/obratnaya-svyaz/" class="zakaz">Написать письмо</a></div>
+    <div class="header-top-phone">
+      <p>(495) 364-21-82</p>
+      <a data-fancybox="" data-src="#call" data-animation-effect="zoom-in-out" href="javascript:;" class="modal-link zakaz">Отправить запрос</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+5) Заменить текст ссылки под слайдером в карточке:
+
+<a href="http://pointparts.lidstudio.ru/attachments/get/8/test.txt" class="more-info-product">Скачать карточку товара в формате PDF</a>
+
+а предыдущую ссылку перенести
+
+<a data-fancybox="" data-src="#delivery_product" data-animation-effect="zoom-in-out" href="javascript:;" class="call-ec-widget more-info-product">Рассчитать доставку</a>
+

@@ -1,0 +1,33 @@
+		<div class="shop-item-block category">
+				  <a href="http://pointparts.lidstudio.ru/shop/shiny-dlya-ekskavatorov-pogruzchikov/shina-pnevmaticheskaya-184-26-12pr-deestone-d312-t/" class="shop-item-title-block category">Шина пневматическая 18.4-26 12PR D312 DEESTONE</a>
+				  <div class="shop-sale">
+				    <div class="shop-label">Скидка<br>300 р.</div>
+				  </div>
+				  <div class="shop-action">
+				    <div class="shop-label shop-label--violet">Акция</div>
+				    <div class="shop-label shop-label--green">Длительный срок службы</div>
+				  </div>
+				  <div class="shop-photo-block">
+				    <a href="http://pointparts.lidstudio.ru/shop/shiny-dlya-ekskavatorov-pogruzchikov/shina-pnevmaticheskaya-184-26-12pr-deestone-d312-t/"><img src="img/images/544_shina-pnevmaticheskaya-184-26-12pr.jpg" alt="Шина пневматическая 18.4-26 12PR D312 DEESTONE" title="Шина пневматическая 18.4-26 12PR D312 DEESTONE" image_id="544" class="js_shop_img"></a> 
+				  </div>
+				  <div class="param-product-block">
+				    <p><span class="param-name">Максимальная нагрузка на скорости 40 км/ч</span><span class="param-value"> 2650 кг.</span></p>
+				    <p><span class="param-name">Рекомендованное давление</span><span class="param-value"> 2.2 бар.</span></p>
+				  </div>
+				  <div class="shop-price">
+				    <span class="shop-oldprice">6 700 р.</span>
+				    <span class="shop-newprice">6 400 р.</span>
+				  </div>
+				  <div class="docs-block"><div class="clear"></div></div>
+				  <a href="http://pointparts.lidstudio.ru/shop/shiny-dlya-ekskavatorov-pogruzchikov/shina-pnevmaticheskaya-184-26-12pr-deestone-d312-t/" class="more-info-product">Подробнее</a>
+				  <div class="shop-compare">
+            <form action="" method="POST" class="ajax">
+              <input type="hidden" name="module" value="shop">
+              <input type="hidden" name="action" value="compare_goods">
+              <input type="hidden" name="id" value="42195">
+              <input type="hidden" name="site_id" value="13">
+              <input type="checkbox" name="add" value="1" id="id_add42195" class="js_shop_add_compare shop_compare_button">
+              <label class="shop_add_compare add_compare" for="id_add42195"></label>
+            </form>
+          </div>
+		</div>
