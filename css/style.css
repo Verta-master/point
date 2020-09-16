@@ -1430,6 +1430,13 @@ ul.topmenu > li {
   background: linear-gradient(to bottom, #fed44c, #fec001);
   cursor: pointer;
 }
+.top-search-btn,
+.search-open {
+  background-image: url(../img/icons/top-search-btn.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search-open,
 .docs-block,
 .shop-item-block.category .param-product-block,
 .shop-sale {
@@ -1696,6 +1703,11 @@ ul.topmenu > li {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.top-line-item-cart-link .header__number {
+  left: 25px;
+  right: auto;
+  background-color: red;
+}
 .big-images .more-info-product {
   display: block;
   position: relative;
@@ -1865,4 +1877,116 @@ ul.tabNavigation li:last-child a {
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+}
+.header,
+.logo {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+#wrapper {
+  position: relative;
+}
+.header--scroll {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  background-color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .clear,
+.header--scroll .search_form,
+.header--scroll .header-top-email,
+.header--scroll .header-top-map,
+.header--scroll .header-top-phone,
+.header--scroll .slogan {
+  display: none;
+}
+.header--scroll .logo {
+  position: static;
+  width: 120px;
+  top: 5px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .logo img {
+  max-width: 100%;
+}
+.header--scroll .top-line-item-cart {
+  position: static;
+}
+.header--scroll .top_search {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  margin-left: auto;
+}
+.header--scroll .search-open {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border: 0;
+}
+.header--scroll .search_form {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  z-index: 2000;
+  border: 1px solid #999;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.header--scroll .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header--scroll .top-search-btn {
+  width: 28px;
+  height: 28px;
+}
+.menu-scroll {
+  position: fixed;
+  top: 10px;
+  left: calc(50% - 340px);
+  z-index: 1100;
+  width: 570px;
+  height: 40px;
+}
+.menu-scroll .topmenu {
+  height: 100%;
+}
+.menu-scroll .topmenu > li > a {
+  height: 100%;
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+}
+.menu-scroll ul.topmenu > li:before {
+  height: 40px;
+}
+.menu-scroll .second-menu > li > a,
+.menu-scroll .third-menu li a {
+  font-size: 12px;
 }
