@@ -1,3 +1,11 @@
+.top-search-btn,
+.search-open {
+  background-image: url(../img/icons/top-search-btn.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-open,
 .docs-block,
 .shop-item-block.category .param-product-block,
 .shop-sale {
@@ -285,6 +293,12 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  
+  .header__number {
+    left: 25px;
+    right: auto;
+    background-color: red;
+  }
 }
 
 .big-images .more-info-product {
@@ -460,4 +474,117 @@ ul.tabNavigation li:last-child a {
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+}
+
+.header,
+.logo {
+  transition: ease-out 0.3s;
+}
+
+#wrapper {
+  position: relative;
+}
+
+.header--scroll {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #fff;
+  transition: ease-out 0.3s;
+  
+  .clear,
+  .search_form,
+  .header-top-email,
+  .header-top-map,
+  .header-top-phone,
+  .slogan {
+    display: none;
+  }
+  
+  .logo {
+    position: static;
+    width: 120px;
+    top: 5px;
+    transition: ease-out 0.3s;
+    
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .top-line-item-cart {
+    position: static;
+  }
+  
+  .top_search {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin-left: auto;
+  }
+  
+  .search-open {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border: 0;
+  }
+  
+  .search_form {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    z-index: 2000;
+    border: 1px solid #999;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-search-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.menu-scroll {
+  position: fixed;
+  top: 10px;
+  left: ~"calc(50% - 340px)";
+  z-index: 1100;
+  width: 570px;
+  height: 40px;
+  
+  .topmenu {
+    height: 100%;
+  }
+  
+  .topmenu>li>a {
+    height: 100%;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  ul.topmenu>li:before {
+    height: 40px;
+  }
+  
+  .second-menu>li>a, .third-menu li a {
+    font-size: 12px;
+  }
 }

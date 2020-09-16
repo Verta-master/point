@@ -140,3 +140,14 @@
   <div class="swiper-button-prev slider__prev"></div>
   <div class="swiper-button-next slider__next"></div>
 </div>
+
+13) Прицепить скрипт для шапки
+
+<script src="js/header.js"></script>
+
+14) В блок поиска добавить кнопку:
+
+	<div class="top_search">
+       <button type="button" class="search-open"></button>
+	   ...
+
